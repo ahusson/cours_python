@@ -1,0 +1,158 @@
+## EXERCISES ##
+
+
+## STRINGS
+
+1. Create a program that prompts a user to enter their name and display it on screen.
+
+
+2. Create a program that prompts a user to enter their name and display the following output on screen:
+...My name is <THE VALUE OF THE VARIABLE name>
+
+
+3. Given the following character string s = "hello, world !", create a program and output the string in reverse.
+The output should be "! dlrow ,olleh".
+
+
+4. Create a program that prompts a user to enter the dimensions of their house (lenght, width) and display the house perimeter on screen.
+
+
+5. Same as 2. for the area of the house.
+
+
+
+## CONTROL FLOW
+
+6. Create a program that prompts the user for their latest grade, check whether their grade is between 0 to 20 included, and display their letter grade on screen according to the following scheme:
+[0, 5[ -> "F"
+[5, 10[ -> "D"
+[10, 15[ -> "C"
+[15, 18[ -> "B"
+[18, 20] -> "A"
+
+
+
+7. Given a list of integers l = [1, 2, 3, 4, 5]
+Write a for-loop to display the following output:
+...The current value is: 1
+...The current value is: 2
+...The current value is: 3
+...The current value is: 4
+...The current value is: 5
+
+
+8. Same as 6 but with a while-loop.
+
+
+9. Given the following list of strings l = ["1", "2", "3", "4", "5"], return the sum of the integer values. The output should be the sum of the integers from 1 to 5 included, so 15.
+
+
+10. Create a program that prompts the user for an integer strictly greater than 1 and display True if that number is prime, False otherwise.
+
+
+11. Create a program that reads the content of myfile.txt using the read method and displays it on screen.
+
+
+
+## BUILTIN TYPES - LISTS
+
+12. Given the following list l = [34, 45, 67, 89], create a program that displays the 3rd element on screen.
+
+
+13. Given the following list l = [34, 45, 67, 89], create a program that increments the 2nd element by 1.
+
+
+14. Given a list l = [1, 2, 3, 4, 5], create a program that reverses the list and displays the result on screen.
+
+
+15. Given an empty list l = [], create a program that fills the list with all integers up to 20 included. Use the range function.
+
+
+16. Same as 15. but do NOT use the range function.
+
+
+17. Same as 15. but only include the even integers. You may or may not use the range function.
+
+
+18. Given the following list l = [2, 4, 6, 7, 8, 9], create a program that prompts the user for a number between 1 to 10 included and displays True if the number is in l, or False otherwise.
+
+
+19. Given the following list l = [2, 4, 6, 7, 8, 9], create a program that displays the minimum number in the list.
+
+
+20. Same as 19. but for the maximum.
+
+
+21. Given the following list l = [2, 4, 6, 7, 8, 9], create a program that removes (Hint: pops) the last element from the list and displays that element on screen.
+
+
+22. Same as 21. but for the element at index 2.
+
+
+23. Given the following list l = [2, 4, 6, 7, 8, 9], create a program that displays the number of element in the list. Use the function "len".
+
+
+24. Same as 23. but do NOT use "len".
+
+
+25. Given a list l = [45, 34, 25, 105, 546, 1, 32], create a program that sorts the list in ascending order, then display the result on screen.
+
+
+26. Create a program that displays a list containing the square of each integer from 1 to 10 included, and do so using list comprehension.
+
+
+
+## BUILTIN TYPES - SETS
+
+
+27. Given a list l = [1, 2, 3], cast the list to a type "set" and display the result.
+
+
+28. Given a list l = [1, 1, 2, 3], cast the list to type "set" and display the result. Notice what happened ?
+
+
+29. Given 2 sets s1 = {1, 2} and s2 = {1, 3}, create a program that displays the intersection of those 2 sets. Here the "intersection" is to be understood in the mathematical sense.
+
+
+30. Given 2 sets s1 = {1, 2} and s2 = {1, 3}, create a program that returns True if s1 is a subset of s2, or False otherwise. Here being a "subset of" is to be understood in the mathematical sense.
+
+
+31. Same as 30. but for the following new sets s1 = {1, 2} and s2 = {1, 2, 3}.
+
+
+
+## BUILTIN TYPES - DICTS
+
+
+32. Given a list l = [1, 1, 1, 2, 2, 3], create a dict that contains the elements from the list l as a key and the number of occurences of that element in l as a value.
+
+
+33. Given a dictionary d = {"a": 23, "b": 45, "c": 2}, create a program that displays the keys of the dict d. Hint: Try using the "keys" method.
+
+
+34. Given a dictionary d = {"a": 23, "b": 45, "c": 2}, create a program that displays the values of the dict d. Hint: Try using the "values" method.
+
+
+35. Given a dictionary d = {"a": 23, "b": 45, "c": 2}, create a program that displays the key-value pairs in the following format
+
+...key = a value = 23
+...key = b value = 45
+...key = c value = 2
+
+Hint: Try using the "items" method.
+
+
+36. Given a dictionary d = {"a": 23, "b": 45, "c": 2}, create a program that removes the key-value pair associated to the "a" key and displays it on screen.
+
+
+37. (HARDER)
+Given an integer s = 10 and a list l = [1, 3, 5, 5, 7, 10], create a program that creates a set of all pairs of integers (i, j) such that i + j = s. The output given the variables s and l above should be {(3, 7), (5, 5)} (notice (3, 7) a,d (7, 3) are duplicates so only one is needed.)
+
+
+38. Create a program that reads the content of myotherfile.txt and displays each line on screen. The out put should look something like:
+... content of line 1
+... content of line 2
+... etc.
+
+Hint: try using the readlines method
+

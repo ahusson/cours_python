@@ -1,0 +1,3 @@
+Hello from myotherfile
+I am another line
+I am the last line of this file, bye !
