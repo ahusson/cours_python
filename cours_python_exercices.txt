@@ -315,10 +315,10 @@ Test using the following inputs: d = {"a": 15, "b": 34, "c": "some other value"}
 Handle the exception. Hint: Use KeyError
 
 
-58. Same as 32. but try using exception handling instead of a logic conditions
+58. Same as 32. but try using exception handling instead of a logic condition
 
 
-59. (HARDER) Create a decorator called exec_time that displays on screen the time it takes for the function it decorates to execute.
+59. (HARDER) Create a decorator called exec_time that displays on screen the time it takes for the function it decorates to execute
 Test your decorator on the following functions
 
 
