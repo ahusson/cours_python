@@ -319,8 +319,15 @@ Handle the exception. Hint: Use KeyError
 
 
 59. (HARDER) Create a decorator called exec_time that displays on screen the time it takes for the function it decorates to execute
-Test your decorator on the following functions
 
+You can use the library time to get the current time, for example:
+
+import time
+print(time.time())  # this will output something like 1695843246.158617
+
+NOTE: What this tells you is the amount of seconds since 01/01/1970
+
+Test your decorator on the following functions
 
 def f():
     print("Inside my function f")
