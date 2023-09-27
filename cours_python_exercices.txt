@@ -156,3 +156,175 @@ Given an integer s = 10 and a list l = [1, 3, 5, 5, 7, 10], create a program tha
 
 Hint: try using the readlines method
 
+
+
+## FUNCTIONS
+
+
+39. Given the following code snippets, answer the corresponding questions:
+
+i)
+
+def f(x):
+    x += 1
+
+x = 1
+f(x)
+print(x)
+
+What happened to x and why ?
+
+ii)
+
+def f():
+    global x
+    x += 1
+
+y = 1
+f()
+print(y)
+
+What happened to y and why ?
+
+iii)
+
+def g(x):
+    x[1] = 34
+
+l = [1,2,3]
+g(l)
+print(l)
+
+What happened to l and why ?
+
+iv)
+
+def h(x):
+    x += (45,)
+    print("Inside function h, variable t is now: {x}")
+
+t = (1, 2, 3)
+h(t)
+print(t)
+
+What happened to t and why ?
+
+
+40. Create a function that takes an integer greater than or equal to 0 and returns the factorial of that integer.
+
+NOTE: the factorial sequence is defined using the following recurrence formula: a_0 = 1, a_n = n * a_n-1 for all n >= 1
+
+
+41. Same as 40 but using recursion
+
+
+42. Write a function that takes a string as a parameter and returns a boolean that is True if the string is a palindrome and False otherwise
+
+NOTE: A palindrome is a string that reads the same forward and backward (eg. "albla", "adrieirda" are palindromes)
+
+
+43. Write a function that takes an arbitrary number of integer arguments and return the sum of these integers
+
+
+44. Write a function that takes in a float argument called radius and returns a float value which is the area of the associated circle.
+
+Hint: for the irrationnal number pi you can either:
+
+i) import math
+math.pi
+
+ii) import numpy
+numpy.pi
+
+iii) simply use 3.14 as a rough approximation
+
+
+45. Same as 44. but return both the area and the perimeter of the circle. I want you to return 2 values.
+
+
+46.
+i) Write a function that takes in a float argument x and return a float value x^2 (x squared)
+
+ii) Write a function df which takes in a float argument x and an optional parameter that accepts functions (kwarg with default value None) and return the derivative of your function f (from (i)) evaluated at x
+          - do this with an explicit formula
+          - if the optional parameter is passed in, let's call it f, do this using the variation (f(x + h) - f(x)) / h for small h
+
+iii) use the area function from 43. as an optional parameter and return the perimeter of the circle using df
+
+
+
+47. Write a function called l2_norm which returns the l2 norm (pythagorean norm) of a vector of arbitrary lenght
+
+NOTE: if x = (x1, x2, ..., xn), then l2_norm(x) := sqrt(x1^2 + x2^2 + ... + xn^2) where sqrt is the square root of a positive real number.
+
+
+48. Write a function that takes a matrix (a list of lists) as a parameter and returns its transpose (M -> M^T).
+Test using [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+
+49. Write a function that takes two matrices (2 lists of lists) as parameters and returns the addition of the two matrices
+Test using [[1, 2, 3], [4, 5, 6], [7, 8, 9]] by adding it with itself
+
+
+50. Write a one liner "lambda" function that takes a parameter x and return x^2
+Test it with the parameter 3
+
+
+51. Write a one liner "lambda" function that takes two parameters x and y and return x^2 + y^2
+Test it with the parameter 1, 2
+
+
+52. Write a function that takes two matrices (2 lists of lists) as parameters and returns the multiplication of the two matrices
+Test using [[1, 2, 3], [4, 5, 6], [7, 8, 9]] by multiplying it with itself
+
+
+53. Given the following list of lists [[1, 34, 3], [4, 2, 6], [7, 22, 9]], sort it according to the ordering of the second elements
+
+Hint 1: the result should be [[4, 2, 6], [7, 22, 9], [1, 34, 3]]
+Hint 2: use the built-in function sorted and pass in a kwarg argument called key
+
+NOTE: Don't hesitate to look at the documentation online for how to use the sorted function
+
+
+
+## EXCEPTIONS
+
+
+54. Write a function that takes two integers as parameters and return the division of the first one by the second one
+Test using the the following inputs: (2, 0)
+Handle the exception. Hint: Use ZeroDivisionError
+
+
+55. Write a function that asks the user for an integer input and return the value of the integer input + 1
+Test using the following user inputs: "wrong input"
+Handle the exception. Hint: Use ValueError
+
+
+56. Write a function that takes a file name as input and returns the content of the file
+Test using the following inputs: "my_very_unprobable_filename.txt"
+Handle the exception. Hint: Use FileNotFoundError
+
+
+57. Write a function that takes two arguments, a list l and an integer i, and return the element in l at index i
+Test using the following inputs: l = [1, 2, 3], i = 15
+Handle the exception. Hint: Use IndexError
+
+
+57. Write a function that takes two arguments, a dict d and a string s, and return the element in d at key s
+Test using the following inputs: d = {"a": 15, "b": 34, "c": "some other value"}, i = "bla"
+Handle the exception. Hint: Use KeyError
+
+
+58. Same as 32. but try using exception handling instead of a logic conditions
+
+
+59. (HARDER) Create a decorator called exec_time that displays on screen the time it takes for the function it decorates to execute.
+Test your decorator on the following functions
+
+
+def f():
+    print("Inside my function f")
+
+def g(x):
+    x += 1
+    return x
