@@ -177,8 +177,8 @@ What happened to x and why ?
 ii)
 
 def f():
-    global x
-    x += 1
+    global y
+    y += 1
 
 y = 1
 f()
@@ -201,7 +201,6 @@ iv)
 
 def h(x):
     x += (45,)
-    print("Inside function h, variable t is now: {x}")
 
 t = (1, 2, 3)
 h(t)
