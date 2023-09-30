@@ -176,34 +176,34 @@ What happened to x and why ?
 
 ii)
 
-def f():
+def g():
     global y
     y += 1
 
 y = 1
-f()
+g()
 print(y)
 
 What happened to y and why ?
 
 iii)
 
-def g(x):
+def h(x):
     x[1] = 34
 
 l = [1,2,3]
-g(l)
+h(l)
 print(l)
 
 What happened to l and why ?
 
 iv)
 
-def h(x):
+def k(x):
     x += (45,)
 
 t = (1, 2, 3)
-h(t)
+k(t)
 print(t)
 
 What happened to t and why ?
