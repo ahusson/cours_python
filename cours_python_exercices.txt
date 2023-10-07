@@ -435,9 +435,9 @@ with the following attributes:
 
 Implement with the following ordering operators:
     - __lt__
-    - __lte__
+    - __le__
     - __gt__
-    - __gte__
+    - __ge__
 
 Eg. That way expression like LimitOrder(10, 2, 1) < LimitOrder(11, 34, 1) makes sense (is True in this case) 
 
