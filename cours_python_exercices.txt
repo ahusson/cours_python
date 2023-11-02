@@ -546,3 +546,63 @@ NOTE: You can use "map" and you can pass in function that implements your work f
 94. Given the following list of strings l = ["cat", "dog", "hedgehog", "gecko"], write a one-liner that returns the following string: "cat-dog-hedgehog-gecko"
 
 NOTE: You can use the string "join" method
+
+
+95. Given the following list of srings
+
+l = ['94', '47', '62', '66', '72', '6', '85', '17', '43', '18', '87', '58', '74', '65', '44', '31', '2', '99', '61', '39', '97', '81', '52', '49', '63', '79', '12', '98', '91', '64', '90', '68', '5', '38', '42', '75', '3', '53', '73', '77', '88', '16', '54', '56', '7', '21', '20', '86', '22', '13', '60', '34', '27', '76', '30', '11', '59', '0', '15', '71', '14', '4', '10', '29', '28', '40', '32', '25', '9', '26', '48', '37', '80', '55', '57', '67', '96', '82', '69', '36', '45', '41', '84', '78', '46', '93', '1', '19', '35', '33', '70', '89', '50', '92', '8', '51', '95', '23', '24', '83']
+
+write a one-liner that returns the sum of the square of the values strictly greater than 15 and less than or equal to 85.
+
+
+96. Using the list l from 95. return the following string: x0^2-x1^2-...-xn^2 where each xi is a value from l strictly greater than 15 and less than or equal to 85,
+
+and xi <= xj for all i <= j.
+
+
+
+## Socket IO - Requests
+
+
+97. Using the following informations, write a function that executes a "GET" request and return the data as a dict.
+    - url: https://httpbin
+    - endpoint: /get
+
+
+98. Using the following informations, write a function that returns a list containing [best bid price, best ask price]:
+    - url: https://api.binance.com
+    - endpoint: /api/v3/depth
+    - params: symbol="BTCUSDT" (spot market)
+
+
+99. Using the following informations, write a function that returns a list of the last 10 trades being executed:
+    - url: https://api.binance.com
+    - endpoint: /api/v3/historicalTrades
+    - params:
+        - symbol="BTCUSDT" (spot market)
+        - limit=100 (there can be fewer than 100 trades and it is ok)
+
+
+100. Using the following informations, write a function that runs for 10 minutes and prints the total volume traded every 10 seconds:
+    - url: https://api.binance.com
+    - endpoint: /api/v3/historicalTrades
+    - params:
+        - symbol="BTCUSDT" (spot market)
+        - fromId=<ID OF THE LAST TRADE FROM THE PREVIOUS REQUEST> (the data returned can be empty and it's ok)
+
+
+101. Write a function that uses your function from 100. and write the data in a CSV file named "BTCUSDT_10_seconds_aggregate_volume.csv" with the following columns:
+    - id
+    - time
+    - price
+    - quantity
+
+NOTE: the above fields should be casted to string before writing to the file.
+
+
+102. Write a function that uses your function from 98. and write the best bid / offer to a CSV file named "BTCUSDT_10_seconds_best_bid_ask.csv" with the following columns:
+    - lastUpdateId
+    - bid_price
+    - ask_price
+
+NOTE: the above fields should be casted to string before writing to the file.
