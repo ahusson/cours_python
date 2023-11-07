@@ -559,7 +559,7 @@ and xi <= xj for all i <= j.
 
 
 95. Using the following informations, write a function that executes a "GET" request and return the data as a dict.
-    - url: https://httpbin
+    - url: https://httpbin.org
     - endpoint: /get
 
 
