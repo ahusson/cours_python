@@ -595,7 +595,7 @@ NOTE: the above fields should be casted to string before writing to the file.
 
 
 100. Write a function that uses your function from 96. and write the best bid / offer to a CSV file named "BTCUSDT_10_seconds_best_bid_ask.csv" with the following columns:
-    - lastUpdateId
+    - last_update_id
     - bid_price
     - ask_price
 
