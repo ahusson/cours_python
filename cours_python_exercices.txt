@@ -585,7 +585,7 @@ and xi <= xj for all i <= j.
         - fromId=<ID OF THE LAST TRADE FROM THE PREVIOUS REQUEST> (the data returned can be empty and it's ok)
 
 
-99. Write a function that uses your function from 100. and write the data in a CSV file named "BTCUSDT_10_seconds_aggregate_volume.csv" with the following columns:
+99. Write a function that uses your function from 98. and write the data in a CSV file named "BTCUSDT_10_seconds_aggregate_volume.csv" with the following columns:
     - id
     - time
     - price
@@ -594,7 +594,7 @@ and xi <= xj for all i <= j.
 NOTE: the above fields should be casted to string before writing to the file.
 
 
-100. Write a function that uses your function from 98. and write the best bid / offer to a CSV file named "BTCUSDT_10_seconds_best_bid_ask.csv" with the following columns:
+100. Write a function that uses your function from 96. and write the best bid / offer to a CSV file named "BTCUSDT_10_seconds_best_bid_ask.csv" with the following columns:
     - lastUpdateId
     - bid_price
     - ask_price
