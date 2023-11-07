@@ -523,13 +523,13 @@ In simulator.py, write code that populates the orderbook by generating ranom Lim
 ## FUNCTIONAL PROGRAMMING
 
 
-88. Using the list from 85. write a one-liner that returns a list of the values less than or equal to 50 (inclusive) using the built-in "filter" function
+88. Using the list from 84. write a one-liner that returns a list of the values less than or equal to 50 (inclusive) using the built-in "filter" function
 
 
-89. Using the list from 85. write a one-liner that returns the square of the values in the list using the built-in "map" function
+89. Using the list from 84. write a one-liner that returns the square of the values in the list using the built-in "map" function
 
 
-90. Using the list from 85. write a one-liner that returns the sum of the values using the "reduce" method from the package functools
+90. Using the list from 84. write a one-liner that returns the sum of the values using the "reduce" method from the package functools
 
 
 91. Given the following list of strings l = ["cat", "dog", "hedgehog", "gecko"], write a one-liner that returns a list of the strings from l reversed
@@ -549,7 +549,7 @@ l = ['94', '47', '62', '66', '72', '6', '85', '17', '43', '18', '87', '58', '74'
 write a one-liner that returns the sum of the square of the values strictly greater than 15 and less than or equal to 85.
 
 
-94. Using the list l from 95. return the following string: x0^2-x1^2-...-xn^2 where each xi is a value from l strictly greater than 15 and less than or equal to 85,
+94. Using the list l from 93. return the following string: x0^2-x1^2-...-xn^2 where each xi is a value from l strictly greater than 15 and less than or equal to 85,
 
 and xi <= xj for all i <= j.
 
