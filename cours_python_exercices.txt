@@ -600,3 +600,122 @@ NOTE: the above fields should be casted to string before writing to the file.
     - ask_price
 
 NOTE: the above fields should be casted to string before writing to the file.
+
+
+101. Given the following list l = [1,2,3], convert it to a numpy array.
+
+
+102. Given the following numpy array arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]), extract a numpy array containing the indexes of even elements in arr.
+
+
+103. Using the result from 102. extract a numpy array containing the even elements from arr.
+
+
+104. Given the numpy array from 102. reshape the array so that it becomes a 2 by 5 matrix.
+
+
+105. Simulate a random uniform(0, 1) with 100 elements.
+
+
+106. Simulate random path with drift 5 and randomness is simulated from a sequence of random normal(0, 10) with 100 steps.
+
+
+107. Given the following matrix M = np.array([[1,2,3], [4,5,6], [7,8,9]]), write a one-liner to get its transpose
+
+
+108. Given the following matrix M = np.array([[1,2,3], [2,1,4], [3,4,1]]), find the following matrix decomposition M = PDP^-1
+
+
+109. Display the dimensions of M
+
+where D is a diagonal matrix with the eigenvalues of M and P is an invertible (change of basis) matrix with columns the eigen vectors of M.
+
+
+110. Perform the multiplication from 107. Do you get the matrix M ?
+
+
+111. Read the data from linreg_data.csv using np.genfromtxt("linreg_data.csv", delimiter=",", dtype=np.float64) and find the coefficients beta = [beta0, beta1] that minimizes
+
+||y - AX|| in l2 sense (ie. find beta in R^2 such that y = beta0 + beta1 * x).
+
+NOTE:
+    - y is a vector of yi where (y-coordinates)
+    - A is an N by 2 matrix with ones in the first columns and xi in second column.
+    - i goes from 1 to N
+
+
+HINT: Ask me.
+
+
+112. Given the following numpy array arr = np.array([34,2,1,45,12,56,76,101,2,1,0]), sort the array using np.argsort.
+
+
+113. Given the follwing list l = [[1,2,3,4,5], [-2,34,56,1,8]], create a pandas dataframe with column names = ["a", "b"].
+
+
+114. Using your dataframe from 113, write a one-liner that multiplies the values in column "a" by 2.
+
+
+115. Using your dataframe from 114., create a third column named "c" that is the product of column "a" with column "b".
+
+
+116. Using your dataframe from 115., create a fourth column named "d" that contains the square of the values from column "c".
+
+    - Do it using the apply method
+
+
+117. Given the following dataframes df1 = pd.DataFrame([[1,2,3,4,5], ["bla", "bli, "foo", "blo", "hey"]], columns=["a", "b"])
+
+and df2 = pd.DataFrame([[1,2,3,6,7,8], ["hello", "world, "random text", "python", "is", "fun"]], columns=["a", "c"]),
+
+write a one-liner that outputs a dataframe containing the lines where column "a" coincide.
+
+HINT: Ask me.
+
+
+118. Using the dataframe from 113., rename column "b" to "new_b".
+
+
+119. Go to the following links:
+
+i) https://data.binance.vision/?prefix=data/futures/um/daily/klines/BTCUSDT/5m
+ii) https://data.binance.vision/?prefix=data/futures/um/daily/klines/ETHUSDT/5m
+
+Download the following zip files:
+    - BTCUSDT-5m-2023-11-08.zip
+    - BTCUSDT-5m-2023-11-07.zip
+    - ETHUSDT-5m-2023-11-08.zip
+    - ETHUSDT-5m-2023-11-07.zip
+
+
+120. Use pandas to load the data into a single dataframe by merging dataframes together.
+
+
+121. Create new columns with normalizes price data where each column has a mean of 0 and a standard deviation of 1
+
+
+122. Perform linear regression on BTCUSDT and ETHUSDT separately.
+
+You can use df.to_numpy() to convert pandas dataframe to numpy arrays.
+
+
+123. Using the result from 122., create new columns where you removed the trend (the drift) from your time series.
+
+
+124. Using your result from 123., create a new column named "spread" that is the difference between the normalized de-trended
+
+prices of BTCUSDT and ETHUSDT.
+
+
+125. Can you come up with a stat-arb trading strategy using the "spread" column ?
+
+
+126. Backtest your strategy using your entire dataframe.
+
+NOTE:
+    - starting capital 10,000 USDT
+    - assume you can always trade your entire available capital with:
+        - no trading costs
+        - no slippage (execution costs)
+
+What's the result of your startegy ?
