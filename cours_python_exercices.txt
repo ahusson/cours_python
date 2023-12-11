@@ -625,13 +625,11 @@ NOTE: the above fields should be casted to string before writing to the file.
 
 108. Given the following matrix M = np.array([[1,2,3], [2,1,4], [3,4,1]]), find the following matrix decomposition M = PDP^-1
 
+109. Perform the multiplication from 107. Do you get the matrix M ?
 
-109. Display the dimensions of M
+110. Display the dimensions of M
 
 where D is a diagonal matrix with the eigenvalues of M and P is an invertible (change of basis) matrix with columns the eigen vectors of M.
-
-
-110. Perform the multiplication from 107. Do you get the matrix M ?
 
 
 111. Read the data from linreg_data.csv using np.genfromtxt("linreg_data.csv", delimiter=",", dtype=np.float64) and find the coefficients beta = [beta0, beta1] that minimizes
@@ -664,9 +662,9 @@ HINT: Ask me.
     - Do it using the apply method
 
 
-117. Given the following dataframes df1 = pd.DataFrame([[1,2,3,4,5], ["bla", "bli, "foo", "blo", "hey"]], columns=["a", "b"])
+117. Given the following dataframes df1 = pd.DataFrame([[1, 'bla'], [2, 'bli'], [3, 'foo'], [4, 'blo'], [5, 'hey']], columns=["a", "b"])
 
-and df2 = pd.DataFrame([[1,2,3,6,7,8], ["hello", "world, "random text", "python", "is", "fun"]], columns=["a", "c"]),
+and df2 = pd.DataFrame([[1, 'hello'], [2, 'world'], [3, 'random text'], [6, 'python'], [7, 'is'], [8, 'fun']], columns=["a", "c"]),
 
 write a one-liner that outputs a dataframe containing the lines where column "a" coincide.
 
