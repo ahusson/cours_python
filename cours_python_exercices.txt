@@ -248,7 +248,7 @@ ii) Write a function df which takes in a float argument x and an optional parame
           - do this with an explicit formula
           - if the optional parameter is passed in, let's call it f, do this using the variation (f(x + h) - f(x)) / h for small h
 
-iii) use the area function from 43. as an optional parameter and return the perimeter of the circle using df
+iii) use the area function from 44. as an optional parameter and return the perimeter of the circle using df
 
 
 
